@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Forms Exercise</title>
+	<!-- This file has been created as part of the exercise in web developer bootcamp Udemy course -->
+</head>
+<body>
+	<h1>Register</h1>
+	<form>
+		<div>
+			<label for="firstname">First Name: </label>
+			<input type="text" name="firstname" id="firstname" placeholder="John" required>
+			<label for="lastname">Last Name: </label>
+			<input type="text" name="lastname" id="lastname" placeholder="Smith" required>
+		</div>
+		<div>
+			<label for="male">Male:</label>
+			<input type="radio" name="gender" id="male" value="male" required>
+			<label for="female">Female:</label>
+			<input type="radio" name="gender" id="female" value="female" required>
+			<label for="other">Other:</label>
+			<input type="radio" name="gender" id="other" value="other" required>
+		</div>
+		<div>
+			<label for="email">Email: </label>
+			<input type="email" name="email" id="email" placeholder="Your email" required>
+			<label for="password">Password: </label>
+			<input type="password" name="password" id="password" placeholder="Your password" pattern=".{5,10}" 
+					title="The password must be atleast 5 character long and atmost 10 character long" required>
+		</div>
+		<div>
+			<label>Birthday: 
+				<select name="day" placeholder="day" required>
+					<option disabled selected>Day</option>
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+					<option>6</option>
+					<option>7</option>
+					<option>8</option>
+					<option>9</option>
+					<option>10</option>
+				</select>
+				<select name="month" placeholder="month" required>
+					<option disabled selected>Month</option>
+					<option value="1">Jan</option>
+					<option value="2">Feb</option>
+					<option value="3">Mar</option>
+					<option value="4">Apr</option>
+					<option value="5">May</option>
+					<option value="6">Jun</option>
+					<option value="7">Jul</option>
+					<option value="8">Aug</option>
+					<option value="9">Sep</option>
+					<option value="10">Oct</option>
+					<option value="11">Nov</option>
+					<option value="12">Dec</option>
+				</select>
+				<select name="year" placeholder="year" required>
+					<option disabled selected>Year</option>
+					<option>2017</option>
+					<option>2016</option>
+					<option>2015</option>
+					<option>2014</option>
+					<option>2013</option>
+					<option>2012</option>
+					<option>2011</option>
+					<option>2010</option>
+				</select>
+			</label>
+		</div>
+		<div>
+			<label for="agree">I agree to the terms and conditions </label>
+			<input type="checkbox" name="agree" value="true" id="agree">
+		</div>
+		<input type="submit" name="submit" value="submit">
+	</form>
+</body>
+</html>

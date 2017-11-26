@@ -1,0 +1,32 @@
+<!-- 
+	1. A button tag at the end of the form can also be used as a submit button, because clicking it also submits the form
+	2. the 'required' attribute inside a input tag makes it mandatory to be filled
+	3. the textarea tag can be used to get multi lined input from the user
+	4. to make a radio-button group use the name for all the input tags in that group
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Input Types</title>
+</head>
+<body>
+	<p>Select your fav pet</p>
+	<form>
+		<label for="dogs">Dogs: </label>
+		<input id="dogs" type="radio" name="petChoice" value="DOGS" required>
+		<label for="cats">Cats: </label>
+		<input id="cats" type="radio" name="petChoice" value="CATS" required>
+		<p>Select your fav color</p>
+		<select name="color">
+			<option value="Blue">Blue</option>
+			<option value="Orange">Orange</option>
+			<option value="Red">Red</option>
+			<option value="Yellow">Yellow</option>
+			<option value="Black">Black</option>
+		</select>
+		<br/>
+		<textarea rows="5" cols="20" name="desc" required></textarea>
+		<button>Go!</button>
+	</form>
+</body>
+</html>

@@ -1,0 +1,18 @@
+/*element selector*/
+body{
+	background: #f0f0fa;
+}
+
+ul{
+	border: 2px solid cyan;
+}
+
+/*id selector. Only one tag in the html can have the same id*/
+#special{
+	background: yellow;
+}
+
+/*class selector. Can be used for any number of elements*/
+.strike{
+	text-decoration: line-through;
+}

@@ -1,0 +1,21 @@
+body{
+	/*background: url(https://www.sketchuptextureclub.com/public/texture_d/0086-white-wood-grain-texture-seamless-hr.jpg);*/
+	background: url(http://www.designbolts.com/wp-content/uploads/2013/02/Free-Tileable-High-Quality-Wood-Textures-Patterns-For-3D-Mapping.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+h1{
+	color: #ffffff;
+	background: rgb(255, 100, 80);
+	border: 2px solid #000000;
+}
+
+h3{
+	color: #f0f0f0;
+	background: rgb(100,150,100);
+	border: 2px solid #000000;
+}
+
+li{
+	color: purple;
+}

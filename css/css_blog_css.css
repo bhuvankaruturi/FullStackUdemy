@@ -1,0 +1,34 @@
+body {
+	width: 50%;
+	margin: 20px auto;
+	border: 20px solid #bdc3c7;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+div {
+	padding: 0 20px;
+}
+
+h2 {
+	color: #2c3e50;
+}
+
+.date {
+	color: #3498db;
+	font-size: 20px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+.first {
+	padding-left: 5px;
+	border-left: 5px solid #bdc3c7;
+}
+
+hr {
+	background-color: #f1f1f1;
+	color: #f1f1f1;
+	height: 2px;
+	width: 90%;
+	margin: 0 auto;
+}
