@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Color Game</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="colorGame.css">
+</head>
+<body>
+	<div id="header">
+		<p>The Great</p>
+		<p id="answer"></p>
+		<p>Guessing Game</p> 
+	</div>
+	<div class="dashboard">
+		<div class="innerContainer row">
+			<button id="gameControl" class="btn col-lg-4 dashBoardSpan">New Colors</button>
+			<span id="result" class="col-lg-4 dashBoardSpan">      </span>
+			<button id="easy" class="btn col-lg-2 dashBoardSpan">Easy</button>
+			<button id="hard" class="btn col-lg-2 dashBoardSpan">Hard</button>
+		</div>
+	</div>
+	<div id="container">
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+	</div>
+	<nav class="navbar navbar-default navbar-fixed-bottom navBarBottom">
+  		<div class="container">
+    		<a href="https://en.wikipedia.org/wiki/RGB_color_model" target="blank">About RGB Color Model</a>
+ 		</div>
+	</nav>
+	<script type="text/javascript" src="colorGame.js"></script>
+</body>
+</html>

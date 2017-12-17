@@ -1,0 +1,68 @@
+body {
+	background-color: #232323;
+	text-align: center;
+}
+
+h1 {
+	color: white;
+}
+
+p {
+	color: white;
+	font-size: 30px;
+	margin: 0;
+}
+
+button {
+	background-color: white;
+}
+
+nav div a {
+	color: white;
+	display: inline-block;
+	padding-top: 15px;
+}
+
+.square {
+	padding-bottom: 30%;
+	width: 30%;
+	margin:1.66%;
+	float: left;
+	border-radius: 10px;
+}
+
+#header {
+	background-color: blue;
+}
+
+#container {
+	margin: 10px auto;
+	max-width: 600px;
+}
+
+#answer {
+	font-size: 50px;
+	color: white;
+	text-transform: uppercase;
+}
+
+.dashboard{
+	background-color: white;
+}
+
+.innerContainer {
+	width: 70%;
+	margin: 0 auto;
+}
+
+.dashBoardSpan {
+	display: inline-block;
+	font-size: 20px;
+	padding:6px 12px;
+	vertical-align: middle;
+}
+
+.navBarBottom {
+	background-color: #232323;
+	border: 2px solid white;
+}
