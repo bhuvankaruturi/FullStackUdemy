@@ -30,3 +30,5 @@ $(document).ready(function(){
 	//console.log("out of setInterval")
 	//name.style.display = 'block';
 });
+
+//use document.querySelector("tag_name") to select a particular tag in the document.
