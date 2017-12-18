@@ -10,6 +10,15 @@ var divNumber;
 var answerColor;
 var randomNumber;
 
+//Code to create and chnage a css class dynamically
+// var style = document.createElement('style');
+// style.type = 'text/css';
+// document.getElementsByTagName('head')[0].appendChild(style)
+
+// var setBackground = function() {
+// 	style.innerHTML = '.currColor{ background-color: ' + answerColor + '; }';
+// }
+
 var getRandomColor = function(){
 	var red = Math.floor(Math.random() * 1000) % 256;
 	var green = Math.floor(Math.random() * 1000) % 256;
@@ -23,26 +32,29 @@ var getStyleValue = function(element, prop){
 
 var initGame = function(number) {
 	resultSpan.textContent = "";
-	gameControlSpan.textContent = "New Colors";
+	gameControlSpan.textContent = "NEW COLORS";
 	headerDiv.style.backgroundColor = "blue";
-	activeMode.style.backgroundColor = getStyleValue(headerDiv, "background-color");
+	activeMode.style.backgroundColor = "blue";
+	activeMode.style.color = "white";
 	divNumber = number;
 	randomNumber = (Math.floor(Math.random() * 10) % divNumber);
-}
+};
+
 var eventHandlerForDiv = function(){
 	if(this.style.backgroundColor == answerColor){
-		resultSpan.textContent = "Correct!"
+		resultSpan.textContent = "CORRECT!"
 		headerDiv.style.backgroundColor = answerColor;
 		for(var j = 0; j < divNumber; j++){
 			colorDivs[j].style.backgroundColor = answerColor;
 		}
-		gameControlSpan.textContent = "Play Again?";
-		activeMode.style.backgroundColor = getStyleValue(headerDiv, "background-color");
+		gameControlSpan.textContent = "PLAY AGAIN?";
+		activeMode.style.backgroundColor = answerColor;
 	} else {
-		resultSpan.textContent = "Try Again!";
+		resultSpan.textContent = "TRY AGAIN!";
 		this.style.backgroundColor = "#232323";
 	}
 };
+
 var gameController = function(number){
 	initGame(number);
 	for(var i = 0; i < colorDivs.length; i++){
@@ -59,14 +71,19 @@ var gameController = function(number){
 			colorDivs[i].addEventListener('click', eventHandlerForDiv);
 		} else {
 			//If i is still less than colorDivs.length then set the remaining divs to black
+
+			//can simply do --> colorDivs[i].style.display = "none"; this is both hide the div and the eventHandler wont work
+
 			colorDivs[i].style.backgroundColor = "#232323";
 			colorDivs[i].removeEventListener('click', eventHandlerForDiv);
 		}
 	}
 };
+
 //starting the game
 gameController(6);
 
+//Play again or New Color button event handling
 gameControlSpan.addEventListener('click', function(){
 		gameController(divNumber);
 		gameOver = false;
@@ -74,17 +91,20 @@ gameControlSpan.addEventListener('click', function(){
 
 var setButtonColors = function(active){
 	activeMode.style.backgroundColor = "white";
+	activeMode.style.color = "blue";
 	activeMode = active;
-	activeMode.style.backgroundColor = getStyleValue(headerDiv, "background-color");
 }
 
 easyButton.addEventListener('click', function(){
-	setButtonColors(this);
-	gameController(3);
+	if(activeMode !== this){
+		setButtonColors(this);
+		gameController(3);
+	}
 });
 
 hardButton.addEventListener('click', function(){
-	setButtonColors(this);
-	gameController(6);
+	if(activeMode !== this){
+		setButtonColors(this);
+		gameController(6);
+	}	
 });
-
