@@ -2,11 +2,17 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Color Game</title>
 	<link rel="stylesheet" type="text/css" href="bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="colorGame.css">
 </head>
 <body>
+	<nav class="navbar navbar-default navbar-fixed-bottom navBarBottom">
+  		<div class="container">
+    		<a href="https://en.wikipedia.org/wiki/RGB_color_model" target="blank">About RGB Color Model</a>
+ 		</div>
+	</nav>
 	<div id="header">
 		<p>THE GREAT</p>
 		<p id="answer"></p>
@@ -27,12 +33,9 @@
 		<div class="square"></div>
 		<div class="square"></div>
 		<div class="square"></div>
+		<div id="bottom"></div>
 	</div>
-	<nav class="navbar navbar-default navbar-fixed-bottom navBarBottom">
-  		<div class="container">
-    		<a href="https://en.wikipedia.org/wiki/RGB_color_model" target="blank">About RGB Color Model</a>
- 		</div>
-	</nav>
+
 	<script type="text/javascript" src="colorGame.js"></script>
 </body>
 </html>

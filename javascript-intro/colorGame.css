@@ -86,7 +86,7 @@ nav div a {
 	font-weight: 500;
 	transition: all 0.4s;
 	-webkit-transition: all 0.4s;
-	-moz-transition: all 0.4s
+	-moz-transition: all 0.4s;
 }
 
 #container {
@@ -98,4 +98,10 @@ nav div a {
 	font-size: 50px;
 	color: white;
 	text-transform: uppercase;
+}
+
+#bottom {
+	float: 	left;
+	padding-top: 70px;
+	width: 100%;
 }
