@@ -1,0 +1,13 @@
+svg {
+  margin: 0 auto;
+  display: block;
+}
+
+svg g line {
+	stroke: #ccc;	
+	stroke-dasharray: 10 5;
+}
+
+svg circle {
+	stroke: white;
+}
