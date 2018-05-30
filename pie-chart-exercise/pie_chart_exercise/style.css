@@ -1,0 +1,16 @@
+svg {
+  margin: 0 auto;
+  display: block;
+}
+
+body {
+	text-align: center;
+}
+
+.arc {
+  	stroke: black;
+}
+
+.innerArc {
+	stroke: black;
+}
